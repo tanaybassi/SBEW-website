@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SBEW – Shree Balaji Engineering Works | Precision CNC Machined Components</title>
+<meta name="description" content="Precision CNC machined and fabricated components manufacturer. ISO 9001:2015 certified. Serving automotive, oil & gas, agriculture OEMs. Export to Canada, Europe.">
+<meta name="keywords" content="Precision Machined Components India, CNC Turning India, CNC Machining Punjab, OEM Machining Supplier, Fabrication Company India, Gear Blank Manufacturer, Shifting Fork Manufacturer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0C1E3C;
+    --navy-deep: #FFFFFF;
+    --navy-mid: #F0F4F8;
+    --gold: #C8960C;
+    --gold-dim: rgba(200,150,12,0.10);
+    --white: #0C1E3C;
+    --off-white: #F6F7F9;
+    --text-light: rgba(12,30,60,0.75);
+    --text-muted: rgba(12,30,60,0.50);
+    --border-light: rgba(12,30,60,0.10);
+    --border-gold: rgba(200,150,12,0.35);
+    --transition: 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #FFFFFF;
+    color: var(--navy);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── TYPOGRAPHY ─────────────────────────────────────── */
+  h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+  .eyebrow {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.08;
+    color: var(--white);
+  }
+  .section-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.75;
+    max-width: 56ch;
+  }
+
+  /* ── NAV ─────────────────────────────────────────────── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 0 5vw;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(12,30,60,0.10);
+    transition: background 0.3s;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .nav-logo-mark {
+    width: 38px; height: 38px;
+    background: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  .nav-logo-mark span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    color: var(--navy);
+    letter-spacing: -0.5px;
+  }
+  .nav-logo-text {
+    display: flex; flex-direction: column;
+    gap: 1px;
+  }
+  .nav-logo-text strong {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--navy);
+    letter-spacing: 1px;
+  }
+  .nav-logo-text small {
+    font-size: 9.5px;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--text-light);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  .nav-cta {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--navy);
+    background: var(--gold);
+    padding: 9px 22px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+  }
+  .nav-cta:hover { background: #ffe033; transform: translateY(-1px); }
+
+  /* ── HERO ─────────────────────────────────────────────── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #F6F7F9;
+  }
+
+  .hero-bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(12,30,60,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(12,30,60,0.05) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 100%);
+  }
+
+  .hero-glow {
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(200,150,12,0.10) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* Animated machining lines in the background */
+  .hero-lines {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .hero-line {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(12,30,60,0.15), transparent);
+    animation: scanLine 4s ease-in-out infinite;
+    opacity: 0;
+  }
+  .hero-line:nth-child(1) { top: 25%; width: 60%; left: 20%; animation-delay: 0s; }
+  .hero-line:nth-child(2) { top: 50%; width: 40%; left: 30%; animation-delay: 1.4s; }
+  .hero-line:nth-child(3) { top: 75%; width: 55%; left: 15%; animation-delay: 2.8s; }
+
+  @keyframes scanLine {
+    0% { opacity: 0; transform: scaleX(0); transform-origin: left; }
+    30% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; transform: scaleX(1); transform-origin: right; }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 160px 5vw 80px;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,214,0,0.08);
+    border: 1px solid var(--border-gold);
+    padding: 6px 16px;
+    margin-bottom: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .hero-badge::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .hero-h1 {
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 900;
+    line-height: 0.95;
+    margin-bottom: 32px;
+    max-width: 14ch;
+    color: var(--navy);
+  }
+  .hero-h1 .accent { color: var(--gold); display: block; }
+
+  .hero-sub {
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    color: var(--text-light);
+    line-height: 1.7;
+    max-width: 52ch;
+    margin-bottom: 48px;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+
+  .btn-primary {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    background: var(--gold);
+    padding: 16px 36px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: all var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-primary:hover { background: #ffe033; transform: translateY(-2px); }
+
+  .btn-ghost {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--white);
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 15px 32px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: all 0.25s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--border-light);
+    padding-top: 40px;
+    max-width: 720px;
+  }
+  .hero-stat {
+    padding-right: 32px;
+    border-right: 1px solid var(--border-light);
+  }
+  .hero-stat:last-child { border-right: none; padding-right: 0; padding-left: 32px; }
+  .hero-stat:nth-child(2), .hero-stat:nth-child(3) { padding-left: 32px; }
+
+  .stat-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+    display: block;
+  }
+  .stat-num .sup { font-size: 1.4rem; color: var(--gold); }
+  .stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 6px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* ── CLIENTS / TRUST BAR ─────────────────────────────── */
+  .trust-bar {
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    padding: 28px 5vw;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    background: rgba(12,30,60,0.03);
+    overflow: hidden;
+  }
+  .trust-bar-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .trust-clients {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .trust-client {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.28);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    cursor: default;
+    white-space: nowrap;
+  }
+  .trust-client:hover { color: rgba(255,255,255,0.6); }
+
+  /* ── SECTION WRAPPER ─────────────────────────────────── */
+  .section {
+    padding: 120px 5vw;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .section-header {
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-header .eyebrow { margin-bottom: 4px; }
+
+  /* ── ABOUT / CAPABILITIES ─────────────────────────────── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .about-visual {
+    position: relative;
+  }
+  .about-img-frame {
+    background: linear-gradient(135deg, rgba(200,150,12,0.07) 0%, rgba(240,244,248,0.9) 100%);
+    border: 1px solid rgba(12,30,60,0.12);
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-img-frame::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 60%;
+    background: var(--gold);
+  }
+  .about-img-frame::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 40%; height: 3px;
+    background: var(--gold);
+  }
+
+  /* CNC schematic SVG visual */
+  .cnc-visual {
+    width: 85%;
+    opacity: 0.85;
+  }
+
+  .about-body {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .about-body p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.8;
+  }
+  .about-pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .pillar {
+    padding: 18px 20px;
+    border: 1px solid var(--border-light);
+    background: rgba(12,30,60,0.03);
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .pillar:hover {
+    border-color: rgba(200,150,12,0.35);
+    background: rgba(200,150,12,0.07);
+  }
+  .pillar-icon {
+    width: 28px; height: 2px;
+    background: var(--gold);
+    margin-bottom: 12px;
+  }
+  .pillar h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+  .pillar p {
+    font-size: 12px !important;
+    color: var(--text-muted) !important;
+    line-height: 1.5 !important;
+    margin: 0;
+  }
+
+  /* ── CAPABILITIES ─────────────────────────────────────── */
+  .cap-section { background: #F0F4F8; }
+  .cap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--border-light);
+  }
+  .cap-card {
+    background: #FFFFFF;
+    padding: 44px 36px;
+    transition: background 0.4s;
+    position: relative;
+    overflow: hidden;
+  }
+  .cap-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s var(--transition);
+  }
+  .cap-card:hover { background: rgba(200,150,12,0.06); }
+  .cap-card:hover::after { transform: scaleX(1); }
+  .cap-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    color: rgba(12,30,60,0.07);
+    line-height: 1;
+    margin-bottom: 24px;
+    transition: color 0.4s;
+  }
+  .cap-card:hover .cap-num { color: rgba(12,30,60,0.12); }
+  .cap-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 14px;
+  }
+  .cap-card p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+  .cap-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 20px;
+  }
+  .cap-tag {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--gold);
+    border: 1px solid var(--border-gold);
+    padding: 3px 10px;
+    text-transform: uppercase;
+  }
+
+  /* ── PRODUCTS ─────────────────────────────────────────── */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    background: var(--border-light);
+  }
+  .product-card {
+    background: #FFFFFF;
+    padding: 36px 28px;
+    position: relative;
+    transition: background 0.3s;
+    cursor: default;
+  }
+  .product-card:hover { background: rgba(200,150,12,0.07); }
+  .product-card-icon {
+    width: 44px; height: 44px;
+    border: 1px solid var(--border-gold);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 20px;
+  }
+  .product-card-icon svg { width: 22px; height: 22px; }
+  .product-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+  .product-card p {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+  .product-materials {
+    margin-top: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(255,214,0,0.5);
+    text-transform: uppercase;
+  }
+
+  /* ── INDUSTRIES ───────────────────────────────────────── */
+  .industries-section { background: #F0F4F8; }
+  .industries-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    background: var(--border-light);
+  }
+  .industry-item {
+    background: #FFFFFF;
+    padding: 48px 48px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    transition: background 0.3s;
+    cursor: default;
+  }
+  .industry-item:hover { background: rgba(12,30,60,0.04); }
+  .industry-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: 2px;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  .industry-body h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+  .industry-body p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+
+  /* ── MACHINES / INFRA ─────────────────────────────────── */
+  .machine-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    background: var(--border-light);
+    margin-bottom: 2px;
+  }
+  .machine-card {
+    background: #FFFFFF;
+    padding: 32px 24px;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  .machine-card:hover { background: rgba(200,150,12,0.07); }
+  .machine-count {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--gold);
+    display: block;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .machine-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+  .machine-desc {
+    font-size: 11.5px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .quality-bar {
+    background: #FFFFFF;
+    border: 2px solid rgba(12,30,60,0.10);
+    padding: 40px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .quality-item {
+    text-align: center;
+  }
+  .quality-item strong {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--white);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .quality-item span {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: 'Poppins', sans-serif;
+  }
+  .quality-divider {
+    width: 1px;
+    height: 40px;
+    background: var(--border-light);
+  }
+
+  /* ── QUALITY / ISO ────────────────────────────────────── */
+  .quality-section { background: #F0F4F8; }
+  .quality-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .quality-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .quality-step {
+    display: flex;
+    gap: 24px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--border-light);
+    transition: background 0.2s;
+  }
+  .quality-step:first-child { padding-top: 0; }
+  .quality-step:last-child { border-bottom: none; }
+  .step-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: 1.5px;
+    flex-shrink: 0;
+    padding-top: 3px;
+  }
+  .step-body h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+  .step-body p {
+    font-size: 13.5px;
+    color: var(--text-light);
+    line-height: 1.65;
+  }
+
+  .iso-badge-large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-gold);
+    padding: 64px 48px;
+    text-align: center;
+    background: rgba(200,150,12,0.07);
+    gap: 16px;
+    position: relative;
+  }
+  .iso-badge-large::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--gold);
+  }
+  .iso-big {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .iso-sub {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-light);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .iso-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 28ch;
+    margin-top: 8px;
+  }
+
+  /* ── WHY US ───────────────────────────────────────────── */
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--border-light);
+  }
+  .why-card {
+    background: #FFFFFF;
+    padding: 48px 36px;
+    position: relative;
+  }
+  .why-icon {
+    width: 48px; height: 48px;
+    border: 1px solid var(--border-gold);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+  }
+  .why-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+  .why-card p {
+    font-size: 13.5px;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+
+  /* ── GLOBAL / EXPORT ──────────────────────────────────── */
+  .export-section { background: #F0F4F8; }
+  .export-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .export-text { display: flex; flex-direction: column; gap: 28px; }
+  .export-text p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.8;
+  }
+  .export-countries {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .export-country {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    border: 1px solid var(--border-light);
+    background: rgba(12,30,60,0.03);
+  }
+  .export-flag {
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+  .export-country-info h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 2px;
+  }
+  .export-country-info p {
+    font-size: 12px !important;
+    color: var(--text-muted) !important;
+    line-height: 1.4 !important;
+    margin: 0;
+  }
+
+  /* World graphic placeholder */
+  .world-graphic {
+    border: 1px solid var(--border-light);
+    aspect-ratio: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(12,30,60,0.03);
+    position: relative;
+    overflow: hidden;
+  }
+  .globe-svg { width: 90%; height: auto; }
+
+  /* ── CTA STRIP ────────────────────────────────────────── */
+  .cta-strip {
+    background: var(--gold);
+    padding: 80px 5vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-strip::before {
+    content: 'SBEW';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(6rem, 15vw, 16rem);
+    font-weight: 900;
+    color: rgba(12,30,60,0.08);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+  .cta-strip h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 900;
+    color: var(--navy);
+    max-width: 20ch;
+    margin: 0 auto 16px;
+    line-height: 1.1;
+    position: relative;
+  }
+  .cta-strip p {
+    font-size: 1.05rem;
+    color: rgba(12,30,60,0.65);
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .cta-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .btn-dark {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gold);
+    background: var(--navy);
+    padding: 16px 36px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-dark:hover { background: var(--navy-mid); }
+  .btn-outline-dark {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    background: transparent;
+    border: 2px solid var(--navy);
+    padding: 14px 32px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-outline-dark:hover { background: var(--navy); color: var(--gold); }
+
+  /* ── CONTACT ──────────────────────────────────────────── */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+  }
+  .contact-info { display: flex; flex-direction: column; gap: 32px; }
+  .contact-info p {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.75;
+  }
+  .contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .contact-icon {
+    width: 18px; height: 18px;
+    background: var(--gold);
+    flex-shrink: 0;
+    margin-top: 2px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px;
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .contact-row-text {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.55;
+  }
+  .contact-row-text strong {
+    display: block;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .rfq-form {
+    background: #F6F7F9;
+    border: 1px solid rgba(12,30,60,0.10);
+    padding: 48px;
+  }
+  .rfq-form h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .form-group label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background: #FFFFFF;
+    border: 1px solid rgba(12,30,60,0.15);
+    color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 13px 16px;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+    appearance: none;
+  }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--text-muted);
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--gold);
+  }
+  .form-group select { cursor: pointer; }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    background: var(--gold);
+    border: none;
+    padding: 18px 36px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .form-submit:hover { background: #ffe033; }
+
+  /* ── FOOTER ───────────────────────────────────────────── */
+  footer {
+    background: #0C1E3C;
+    border-top: 1px solid rgba(255,255,255,0.10);
+    padding: 64px 5vw 36px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 56px;
+  }
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-tagline {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 30ch;
+  }
+  .footer-col h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-col ul li a {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: 'Inter', sans-serif;
+  }
+  .footer-col ul li a:hover { color: var(--gold); }
+  .footer-bottom {
+    border-top: 1px solid var(--border-light);
+    padding-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .footer-copy {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+  }
+  .footer-certs {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .footer-cert {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: rgba(255,214,0,0.5);
+    border: 1px solid var(--border-gold);
+    padding: 4px 10px;
+    text-transform: uppercase;
+  }
+
+  /* ── FLOATING WHATSAPP ────────────────────────────────── */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 28px; right: 28px;
+    z-index: 200;
+    background: #25D366;
+    width: 54px; height: 54px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 24px rgba(37,211,102,0.5);
+  }
+  .whatsapp-float svg { width: 28px; height: 28px; fill: white; }
+
+  /* ── SCROLL ANIMATIONS ────────────────────────────────── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+
+  /* ── MOBILE ───────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .hero-stat:last-child { padding-left: 0; }
+    .hero-stat:nth-child(2), .hero-stat:nth-child(3) { padding-left: 0; }
+    .about-grid, .quality-grid, .export-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    .cap-grid { grid-template-columns: 1fr; }
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
+    .industries-list { grid-template-columns: 1fr; }
+    .machine-grid { grid-template-columns: repeat(3, 1fr); }
+    .why-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .trust-clients { gap: 28px; }
+    .form-row { grid-template-columns: 1fr; }
+    .quality-bar { flex-direction: column; align-items: flex-start; }
+    .quality-divider { display: none; }
+  }
+
+  /* ── GALLERY ──────────────────────────────────────────── */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: rgba(12,30,60,0.08);
+  }
+  .gallery-card {
+    background: #FFFFFF;
+    overflow: hidden;
+    position: relative;
+    cursor: zoom-in;
+  }
+  .gallery-img-wrap {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/2;
+  }
+  .gallery-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s var(--transition);
+    filter: brightness(0.92) contrast(1.05);
+  }
+  .gallery-card:hover .gallery-img-wrap img {
+    transform: scale(1.06);
+    filter: brightness(1.0) contrast(1.05);
+  }
+  .gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.4s;
+  }
+  .gallery-card:hover .gallery-overlay { background: rgba(12,30,60,0.30); }
+  .gallery-zoom {
+    font-size: 28px;
+    color: var(--gold);
+    opacity: 0;
+    transform: scale(0.7);
+    transition: all 0.3s;
+  }
+  .gallery-card:hover .gallery-zoom { opacity: 1; transform: scale(1); }
+  .gallery-caption {
+    padding: 20px 24px;
+    border-top: 1px solid var(--border-light);
+    background: #FFFFFF;
+  }
+  .gallery-caption h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+  .gallery-caption p {
+    font-size: 11.5px;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* ── CERTIFICATE ──────────────────────────────────────── */
+  .cert-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .cert-img-wrap {
+    position: relative;
+    border: 1px solid var(--border-light);
+  }
+  .cert-img {
+    width: 100%;
+    display: block;
+    filter: brightness(0.95) contrast(1.05);
+  }
+  .cert-corner {
+    position: absolute;
+    width: 20px; height: 20px;
+    border-color: var(--gold);
+    border-style: solid;
+  }
+  .cert-corner.tl { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+  .cert-corner.tr { top: -1px; right: -1px; border-width: 2px 2px 0 0; }
+  .cert-corner.bl { bottom: -1px; left: -1px; border-width: 0 0 2px 2px; }
+  .cert-corner.br { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+  .cert-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .cert-detail-row {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .cert-detail-row:first-child { padding-top: 0; }
+  .cert-detail-row:last-of-type { border-bottom: none; }
+  .cert-detail-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .cert-detail-value {
+    font-size: 14px;
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 900px) {
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .cert-layout { grid-template-columns: 1fr; gap: 48px; }
+  }
+
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark"><span>SB</span></div>
+    <div class="nav-logo-text">
+      <strong>SBEW</strong>
+      <small>Est. 2007</small>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#capabilities">Capabilities</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#quality">Quality</a></li>
+    <li><a href="#exports">Global Supply</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#certificate">Certificate</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Request Quote</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-lines">
+    <div class="hero-line"></div>
+    <div class="hero-line"></div>
+    <div class="hero-line"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">ISO 9001:2015 Certified &nbsp;·&nbsp; Est. 2007</div>
+    <h1 class="hero-h1">
+      Engineering<br>
+      <span class="accent">Precision.</span>
+    </h1>
+    <p class="hero-sub">
+      Trusted manufacturer of CNC machined and fabricated components, 
+      serving automotive, oil & gas, and agricultural OEMs — from Punjab, India to the world.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">
+        Request a Quote
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#about" class="btn-ghost">
+        Explore SBEW
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="stat-num"><span class="sup">18</span>+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-num">14<span class="sup" style="font-size:1.2rem">+</span></span>
+        <span class="stat-label">Machines & Robots</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-num">6<span class="sup" style="font-size:1.2rem">+</span></span>
+        <span class="stat-label">Industries Served</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-num">2<span class="sup" style="font-size:1.2rem">+</span></span>
+        <span class="stat-label">Export Countries</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <span class="trust-bar-label">Trusted By</span>
+  <div class="trust-clients">
+    <span class="trust-client">Automotive OEMs</span>
+    <span class="trust-client">Gearbox Manufacturers</span>
+    <span class="trust-client">Canada</span>
+    <span class="trust-client">Hungary</span>
+    <span class="trust-client">India — Pan-India</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="section">
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="about-img-frame">
+        <!-- Detailed CNC schematic SVG -->
+        <svg class="cnc-visual" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+          <!-- Lathe bed -->
+          <rect x="40" y="200" width="400" height="24" fill="none" stroke="rgba(255,214,0,0.35)" stroke-width="1.5"/>
+          <!-- Headstock -->
+          <rect x="40" y="100" width="90" height="124" fill="none" stroke="rgba(255,214,0,0.45)" stroke-width="1.5"/>
+          <!-- Spindle -->
+          <circle cx="85" cy="164" r="28" fill="none" stroke="rgba(255,214,0,0.5)" stroke-width="1.5"/>
+          <circle cx="85" cy="164" r="18" fill="none" stroke="rgba(255,214,0,0.3)" stroke-width="1"/>
+          <circle cx="85" cy="164" r="6" fill="rgba(255,214,0,0.5)"/>
+          <!-- Chuck jaws -->
+          <line x1="85" y1="136" x2="85" y2="148" stroke="rgba(255,214,0,0.4)" stroke-width="2"/>
+          <line x1="85" y1="180" x2="85" y2="192" stroke="rgba(255,214,0,0.4)" stroke-width="2"/>
+          <line x1="57" y1="164" x2="69" y2="164" stroke="rgba(255,214,0,0.4)" stroke-width="2"/>
+          <line x1="101" y1="164" x2="113" y2="164" stroke="rgba(255,214,0,0.4)" stroke-width="2"/>
+          <!-- Tailstock -->
+          <rect x="360" y="140" width="60" height="84" fill="none" stroke="rgba(255,214,0,0.3)" stroke-width="1.5"/>
+          <!-- Carriage -->
+          <rect x="180" y="156" width="120" height="44" fill="none" stroke="rgba(255,214,0,0.5)" stroke-width="1.5"/>
+          <!-- Tool holder -->
+          <rect x="200" y="140" width="36" height="24" fill="none" stroke="rgba(255,214,0,0.6)" stroke-width="1.5"/>
+          <polygon points="236,148 260,158 236,164" fill="rgba(255,214,0,0.2)" stroke="rgba(255,214,0,0.7)" stroke-width="1"/>
+          <!-- Workpiece -->
+          <ellipse cx="150" cy="164" rx="10" ry="28" fill="rgba(255,214,0,0.08)" stroke="rgba(255,214,0,0.35)" stroke-width="1"/>
+          <!-- Cutting chips animation -->
+          <line x1="260" y1="156" x2="270" y2="148" stroke="rgba(255,214,0,0.4)" stroke-width="1"/>
+          <line x1="260" y1="158" x2="274" y2="152" stroke="rgba(255,214,0,0.3)" stroke-width="1"/>
+          <line x1="260" y1="161" x2="272" y2="158" stroke="rgba(255,214,0,0.25)" stroke-width="1"/>
+          <!-- Dimension lines -->
+          <line x1="40" y1="80" x2="440" y2="80" stroke="rgba(255,255,255,0.08)" stroke-width="0.5" stroke-dasharray="4,4"/>
+          <line x1="40" y1="80" x2="40" y2="90" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+          <line x1="440" y1="80" x2="440" y2="90" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+          <text x="240" y="76" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="9" font-family="Inter">Max. Turning Length: 1800 mm</text>
+          <!-- Labels -->
+          <text x="85" y="248" text-anchor="middle" fill="rgba(255,214,0,0.45)" font-size="8" font-family="Inter">HEADSTOCK</text>
+          <text x="240" y="248" text-anchor="middle" fill="rgba(255,214,0,0.45)" font-size="8" font-family="Inter">CARRIAGE / TOOL POST</text>
+          <text x="390" y="248" text-anchor="middle" fill="rgba(255,214,0,0.45)" font-size="8" font-family="Inter">TAILSTOCK</text>
+          <!-- Tolerances band -->
+          <rect x="40" y="280" width="400" height="40" fill="none"/>
+          <text x="40" y="296" fill="rgba(255,255,255,0.18)" font-size="9" font-family="Inter,monospace">TOLERANCE: ±0.005 mm  |  SURFACE FINISH: Ra 0.8 µm  |  MATERIAL: EN8/EN24/SS304</text>
+          <!-- Animated scan line -->
+          <rect x="40" y="100" width="2" height="124" fill="rgba(255,214,0,0.25)">
+            <animate attributeName="x" values="40;350;40" dur="4s" repeatCount="indefinite"/>
+          </rect>
+        </svg>
+      </div>
+    </div>
+    <div class="about-body reveal">
+      <div>
+        <p class="eyebrow">About SBEW</p>
+        <h2 class="section-title" style="margin-top:12px;">Built on precision.<br>Trusted by OEMs.</h2>
+      </div>
+      <p>
+        Shree Balaji Engineering Works has been delivering precision-machined components 
+        and fabricated assemblies since 2007. From our modern facility in Hoshiarpur, Punjab, 
+        we supply automotive Tier-1s, gearbox manufacturers, and export customers across 
+        Canada and Europe.
+      </p>
+      <p>
+        We operate a fully equipped machine shop with CNC turning centres, VMC machining, 
+        and a dedicated inspection room — backed by an ISO 9001:2015 quality system and 
+        Mitutoyo measurement instruments.
+      </p>
+      <div class="about-pillars">
+        <div class="pillar">
+          <div class="pillar-icon"></div>
+          <h4>CNC Turning</h4>
+          <p>Ø 300 mm / 600 mm L · ±0.005 mm tolerance</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"></div>
+          <h4>VMC Machining</h4>
+          <p>X 100 × Y 500 × Z 500 mm work envelope</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"></div>
+          <h4>Fabrication</h4>
+          <p>MIG / TIG welded structural assemblies</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"></div>
+          <h4>Reverse Engineering</h4>
+          <p>Reproduce legacy components from samples</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CAPABILITIES -->
+<section id="capabilities" class="cap-section">
+<div class="section">
+  <div class="section-header reveal">
+    <p class="eyebrow">Manufacturing Capabilities</p>
+    <h2 class="section-title">What we manufacture.<br>How we do it.</h2>
+    <p class="section-subtitle">Every component is produced using our multi-machine workflow — from raw material through final inspection.</p>
+  </div>
+  <div class="cap-grid">
+    <div class="cap-card reveal">
+      <div class="cap-num">01</div>
+      <h3>CNC Turning</h3>
+      <p>4 CNC turning centres. Max diameter 300 mm, max turning length 600 mm. Ideal for shafts, bushes, rings, gear blanks, and flanges.</p>
+      <div class="cap-tag-list">
+        <span class="cap-tag">EN8</span><span class="cap-tag">EN24</span><span class="cap-tag">SS304</span><span class="cap-tag">Alloy Steel</span>
+      </div>
+    </div>
+    <div class="cap-card reveal reveal-delay-1">
+      <div class="cap-num">02</div>
+      <h3>VMC Machining</h3>
+      <p>2 vertical machining centres. Work envelope X 100 mm × Y 500 mm × Z 500 mm. Milling, drilling, boring and tapping of prismatic components.</p>
+      <div class="cap-tag-list">
+        <span class="cap-tag">Milling</span><span class="cap-tag">Drilling</span><span class="cap-tag">Boring</span><span class="cap-tag">Tapping</span>
+      </div>
+    </div>
+    <div class="cap-card reveal reveal-delay-2">
+      <div class="cap-num">03</div>
+      <h3>Fabrication & Welding</h3>
+      <p>6-axis robotic MIG/MAG welding with 2 m radius reach. Structural and precision fabrication for hydraulics, material handling, and custom industrial assemblies.</p>
+      <div class="cap-tag-list">
+        <span class="cap-tag">6-Axis Robot</span><span class="cap-tag">MIG/MAG</span><span class="cap-tag">2m Reach</span><span class="cap-tag">SS/MS</span>
+      </div>
+    </div>
+    <div class="cap-card reveal">
+      <div class="cap-num">04</div>
+      <h3>Prototype Development</h3>
+      <p>From drawing to first article in days. We support OEM development programs with rapid prototyping, DFM review, and first article inspection reports.</p>
+      <div class="cap-tag-list">
+        <span class="cap-tag">FAIR</span><span class="cap-tag">DFM</span><span class="cap-tag">Sample Approval</span>
+      </div>
+    </div>
+    <div class="cap-card reveal reveal-delay-1">
+      <div class="cap-num">05</div>
+      <h3>Reverse Engineering</h3>
+      <p>Reproduce obsolete or imported components from physical samples. We create engineering drawings and produce production-grade replacements.</p>
+      <div class="cap-tag-list">
+        <span class="cap-tag">CMM</span><span class="cap-tag">Sample Matching</span><span class="cap-tag">Legacy Parts</span>
+      </div>
+    </div>
+    <div class="cap-card reveal reveal-delay-2">
+      <div class="cap-num">06</div>
+      <h3>Batch Production</h3>
+      <p>Flexible production runs from 10 pieces to 10,000+ per batch. Dedicated job travellers, traceability records, and packaging to customer specification.</p>
+      <div class="cap-tag-list">
+        <span class="cap-tag">VCI</span><span class="cap-tag">Traceability</span><span class="cap-tag">OEM Pack</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+<div class="section">
+  <div class="section-header reveal">
+    <p class="eyebrow">Product Range</p>
+    <h2 class="section-title">Precision parts.<br>Every form factor.</h2>
+    <p class="section-subtitle">From transmission components to structural fabrications — we manufacture what your BOM demands.</p>
+  </div>
+  <div class="products-grid">
+
+    <div class="product-card reveal">
+      <div class="product-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,214,0,0.7)" stroke-width="1.5">
+          <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/>
+          <line x1="12" y1="3" x2="12" y2="7"/><line x1="12" y1="17" x2="12" y2="21"/>
+          <line x1="3" y1="12" x2="7" y2="12"/><line x1="17" y1="12" x2="21" y2="12"/>
+        </svg>
+      </div>
+      <h3>Gear Blanks</h3>
+      <p>Close-tolerance blanks for gear cutting operations. Supplied to transmission and gearbox manufacturers.</p>
+      <div class="product-materials">EN8 · EN24 · 20MnCr5</div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-1">
+      <div class="product-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,214,0,0.7)" stroke-width="1.5">
+          <rect x="3" y="10" width="18" height="4" rx="1"/>
+          <line x1="8" y1="10" x2="8" y2="14"/><line x1="16" y1="10" x2="16" y2="14"/>
+          <path d="M6 6l-3 4m15-4l3 4"/>
+        </svg>
+      </div>
+      <h3>Shifting Forks</h3>
+      <p>Precision-machined shifting forks for manual and automated gearboxes. Tight positional and form tolerances.</p>
+      <div class="product-materials">EN9 · OHNS · Alloy Steel</div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-2">
+      <div class="product-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,214,0,0.7)" stroke-width="1.5">
+          <line x1="12" y1="2" x2="12" y2="22"/>
+          <ellipse cx="12" cy="8" rx="6" ry="2"/>
+          <ellipse cx="12" cy="16" rx="4" ry="1.5"/>
+        </svg>
+      </div>
+      <h3>Precision Shafts</h3>
+      <p>Turned and ground shafts up to 1800 mm length. Splined, keyway, and tapered variants available.</p>
+      <div class="product-materials">EN8 · EN24 · EN36</div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-3">
+      <div class="product-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,214,0,0.7)" stroke-width="1.5">
+          <circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/>
+          <path d="M12 4v4M12 16v4M4 12h4M16 12h4"/>
+        </svg>
+      </div>
+      <h3>Bushes & Spacers</h3>
+      <p>Plain, flanged, and threaded bushes. Spacers and distance pieces to drawing.</p>
+      <div class="product-materials">Brass · Bronze · SS · MS</div>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,214,0,0.7)" stroke-width="1.5">
+          <circle cx="12" cy="12" r="7"/>
+          <rect x="9" y="9" width="6" height="6"/>
+        </svg>
+      </div>
+      <h3>Bearing Races</h3>
+      <p>Inner and outer bearing races in alloy steel. Ground bores and ODs for interference fits.</p>
+      <div class="product-materials">52100 · Alloy Steel</div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-1">
+      <div class="product-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,214,0,0.7)" stroke-width="1.5">
+          <rect x="4" y="7" width="16" height="10" rx="1"/>
+          <circle cx="12" cy="12" r="3"/>
+          <line x1="4" y1="12" x2="7" y2="12"/><line x1="17" y1="12" x2="20" y2="12"/>
+        </svg>
+      </div>
+      <h3>Flanges</h3>
+      <p>Weld neck, slip-on, and blind flanges. Custom bolt circles and raised face finishes.</p>
+      <div class="product-materials">MS · SS304 · SS316</div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-2">
+      <div class="product-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,214,0,0.7)" stroke-width="1.5">
+          <path d="M6 12h12M6 12c0-2.2 1.8-4 4-4h4c2.2 0 4 1.8 4 4s-1.8 4-4 4h-4c-2.2 0-4-1.8-4-4z"/>
+        </svg>
+      </div>
+      <h3>Coupling Hubs</h3>
+      <p>Spider couplings, rigid and flexible hubs. Balanced to reduce vibration in drivetrain applications.</p>
+      <div class="product-materials">EN8 · CI · Aluminium</div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-3">
+      <div class="product-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,214,0,0.7)" stroke-width="1.5">
+          <path d="M4 8h16v10H4z"/><path d="M8 8V5m8 3V5"/>
+          <circle cx="10" cy="13" r="1.5"/><circle cx="14" cy="13" r="1.5"/>
+        </svg>
+      </div>
+      <h3>Custom CNC Parts</h3>
+      <p>One-off and production CNC parts to customer drawing. Full FAIR documentation on request.</p>
+      <div class="product-materials">As Specified</div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries" class="industries-section">
+<div class="section">
+  <div class="section-header reveal">
+    <p class="eyebrow">Industries Served</p>
+    <h2 class="section-title">Mission-critical parts<br>for demanding sectors.</h2>
+  </div>
+  <div class="industries-list">
+    <div class="industry-item reveal">
+      <span class="industry-num">01</span>
+      <div class="industry-body">
+        <h3>Automotive</h3>
+        <p>Transmission shafts, gear blanks, shifting forks, and powertrain components for passenger cars, tractors, and commercial vehicles. Tier-1 supply experience.</p>
+      </div>
+    </div>
+    <div class="industry-item reveal reveal-delay-1">
+      <span class="industry-num">02</span>
+      <div class="industry-body">
+        <h3>Agriculture</h3>
+        <p>PTO components, hydraulic valve bodies, and implement shafts for combine harvesters, tillers, and farm equipment manufacturers across North India.</p>
+      </div>
+    </div>
+    <div class="industry-item reveal">
+      <span class="industry-num">03</span>
+      <div class="industry-body">
+        <h3>Oil & Gas</h3>
+        <p>Valve components, manifolds, flanges, and pump shafts. Materials including SS316, duplex, and alloy steels for pressure-rated assemblies.</p>
+      </div>
+    </div>
+    <div class="industry-item reveal reveal-delay-1">
+      <span class="industry-num">04</span>
+      <div class="industry-body">
+        <h3>Gearbox Manufacturers</h3>
+        <p>Specialist supplier to gearbox OEMs. Precision blanks, housings, and shafts with batch traceability and full dimensional documentation.</p>
+      </div>
+    </div>
+    <div class="industry-item reveal">
+      <span class="industry-num">05</span>
+      <div class="industry-body">
+        <h3>Construction Equipment</h3>
+        <p>Pins, bushes, pivot shafts, and fabricated frames for earth-moving and material handling equipment. High-strength steels and hard-chrome options.</p>
+      </div>
+    </div>
+    <div class="industry-item reveal reveal-delay-1">
+      <span class="industry-num">06</span>
+      <div class="industry-body">
+        <h3>Industrial Machinery</h3>
+        <p>Custom machined components for capital equipment, conveying systems, and hydraulic machinery. Flexible batch sizes from 10 to 5,000+ pieces.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- MACHINES / INFRA -->
+<section id="infrastructure">
+<div class="section">
+  <div class="section-header reveal">
+    <p class="eyebrow">Manufacturing Infrastructure</p>
+    <h2 class="section-title">Modern machines.<br>Controlled environment.</h2>
+  </div>
+  <div class="machine-grid">
+    <div class="machine-card reveal">
+      <span class="machine-count">4</span>
+      <div class="machine-name">CNC Turning Centres</div>
+      <div class="machine-desc">Ø 300 mm max dia · 600 mm max length</div>
+    </div>
+    <div class="machine-card reveal reveal-delay-1">
+      <span class="machine-count">2</span>
+      <div class="machine-name">VMC Machines</div>
+      <div class="machine-desc">X 100 × Y 500 × Z 500 mm work envelope</div>
+    </div>
+    <div class="machine-card reveal reveal-delay-2">
+      <span class="machine-count">1</span>
+      <div class="machine-name">Auto Bandsaw</div>
+      <div class="machine-desc">Ø 300 mm max bar capacity</div>
+    </div>
+    <div class="machine-card reveal reveal-delay-3">
+      <span class="machine-count">6</span>
+      <div class="machine-name">Conventional Lathes</div>
+      <div class="machine-desc">Manual turning for prototypes and legacy parts</div>
+    </div>
+    <div class="machine-card reveal">
+      <span class="machine-count">1</span>
+      <div class="machine-name">Inspection Room</div>
+      <div class="machine-desc">Climate-controlled with Mitutoyo instruments</div>
+    </div>
+  </div>
+  <!-- Robot welder row -->
+  <div class="machine-grid" style="margin-top:2px; grid-template-columns: repeat(2,1fr);">
+    <div class="machine-card reveal">
+      <span class="machine-count">1</span>
+      <div class="machine-name">6-Axis Robotic Welder</div>
+      <div class="machine-desc">2 m radius · MIG/MAG · Structural & precision fabrication</div>
+    </div>
+    <div class="machine-card reveal reveal-delay-1">
+      <span class="machine-count">1</span>
+      <div class="machine-name">Pillar Drill</div>
+      <div class="machine-desc">Heavy-duty drilling for structural components</div>
+    </div>
+  </div>
+  <div class="quality-bar reveal" style="margin-top:2px;">
+    <div class="quality-item">
+      <strong>Mitutoyo</strong>
+      <span>Height Gauges</span>
+    </div>
+    <div class="quality-divider"></div>
+    <div class="quality-item">
+      <strong>Bore Gauges</strong>
+      <span>±0.001 mm</span>
+    </div>
+    <div class="quality-divider"></div>
+    <div class="quality-item">
+      <strong>Micrometers</strong>
+      <span>Digital Series</span>
+    </div>
+    <div class="quality-divider"></div>
+    <div class="quality-item">
+      <strong>CMM</strong>
+      <span>Dimensional Verification</span>
+    </div>
+    <div class="quality-divider"></div>
+    <div class="quality-item">
+      <strong>Verniers</strong>
+      <span>0.01 mm Resolution</span>
+    </div>
+    <div class="quality-divider"></div>
+    <div class="quality-item">
+      <strong>Fixtures</strong>
+      <span>Inspection Jigs</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- QUALITY -->
+<section id="quality" class="quality-section">
+<div class="section">
+  <div class="section-header reveal">
+    <p class="eyebrow">Quality System</p>
+    <h2 class="section-title">Zero-defect mindset.<br>ISO-certified process.</h2>
+  </div>
+  <div class="quality-grid">
+    <div class="quality-steps reveal">
+      <div class="quality-step">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <h4>Material Verification</h4>
+          <p>Every batch begins with material test report (MTR) verification against chemical composition and mechanical property requirements.</p>
+        </div>
+      </div>
+      <div class="quality-step">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <h4>In-Process Inspection</h4>
+          <p>Dimensional checks at each machining stage. Critical features verified with Mitutoyo instruments per the approved control plan.</p>
+        </div>
+      </div>
+      <div class="quality-step">
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <h4>Final Dimensional Verification</h4>
+          <p>100% dimensional check on first articles. Statistical sampling per AQL on production batches. All records retained.</p>
+        </div>
+      </div>
+      <div class="quality-step">
+        <span class="step-num">04</span>
+        <div class="step-body">
+          <h4>Batch Traceability</h4>
+          <p>Heat number, lot identification, and inspection records maintained per component batch. Full traceability from raw material to despatch.</p>
+        </div>
+      </div>
+      <div class="quality-step">
+        <span class="step-num">05</span>
+        <div class="step-body">
+          <h4>Packaging & Preservation</h4>
+          <p>VCI poly packaging, OEM-specified crating, and ocean-freight packaging for export consignments. Parts delivered ready-to-use.</p>
+        </div>
+      </div>
+    </div>
+    <div class="iso-badge-large reveal reveal-delay-1">
+      <div class="iso-big">ISO</div>
+      <div class="iso-big" style="margin-top:-12px;">9001</div>
+      <div class="iso-big" style="margin-top:-12px; font-size:2.2rem;">:2015</div>
+      <div class="iso-sub">Quality Management System</div>
+      <p class="iso-desc">
+        Manufacturing of Engineering Goods and CNC Machined Components.
+      </p>
+      <div style="margin-top:20px; border-top:1px solid rgba(255,214,0,0.2); padding-top:20px; width:100%; text-align:left;">
+        <table style="width:100%; border-collapse:collapse; font-family:'Inter',sans-serif;">
+          <tr>
+            <td style="font-size:10px; color:rgba(255,255,255,0.35); letter-spacing:1px; text-transform:uppercase; padding:4px 0; font-family:'Poppins',sans-serif;">Certificate No</td>
+            <td style="font-size:12px; color:rgba(255,214,0,0.85); font-weight:600; text-align:right; padding:4px 0;">25MEQTI92</td>
+          </tr>
+          <tr>
+            <td style="font-size:10px; color:rgba(255,255,255,0.35); letter-spacing:1px; text-transform:uppercase; padding:4px 0; font-family:'Poppins',sans-serif;">Issued</td>
+            <td style="font-size:12px; color:rgba(255,255,255,0.6); text-align:right; padding:4px 0;">17 June 2025</td>
+          </tr>
+          <tr>
+            <td style="font-size:10px; color:rgba(255,255,255,0.35); letter-spacing:1px; text-transform:uppercase; padding:4px 0; font-family:'Poppins',sans-serif;">Valid Until</td>
+            <td style="font-size:12px; color:rgba(255,255,255,0.6); text-align:right; padding:4px 0;">16 June 2028</td>
+          </tr>
+          <tr>
+            <td style="font-size:10px; color:rgba(255,255,255,0.35); letter-spacing:1px; text-transform:uppercase; padding:4px 0; font-family:'Poppins',sans-serif;">Certifying Body</td>
+            <td style="font-size:12px; color:rgba(255,255,255,0.6); text-align:right; padding:4px 0;">MMS · EGAC Accredited · IAF</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+<div class="section">
+  <div class="section-header reveal">
+    <p class="eyebrow">Why Choose SBEW</p>
+    <h2 class="section-title">The SBEW advantage.</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon">
+        <svg width="22" height="22" fill="none" stroke="rgba(255,214,0,0.8)" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <h3>18+ Years of Expertise</h3>
+      <p>Deep application knowledge across automotive, agriculture, and industrial sectors. We understand what OEM supply chains demand — in quality, documentation, and delivery.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-1">
+      <div class="why-icon">
+        <svg width="22" height="22" fill="none" stroke="rgba(255,214,0,0.8)" stroke-width="1.5" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+      </div>
+      <h3>Flexible Production</h3>
+      <p>Small prototype runs to high-volume production batches — we scale to your program. Quick-change tooling and dedicated setups keep your lead time short.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <div class="why-icon">
+        <svg width="22" height="22" fill="none" stroke="rgba(255,214,0,0.8)" stroke-width="1.5" viewBox="0 0 24 24">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+        </svg>
+      </div>
+      <h3>Documented Quality</h3>
+      <p>ISO 9001:2015 system with FMEA, process flow, control plans, and FAIR documentation. Export customers receive full CoC, MTRs, and dimensional reports.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">
+        <svg width="22" height="22" fill="none" stroke="rgba(255,214,0,0.8)" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </div>
+      <h3>Single-Source Capability</h3>
+      <p>Turning, milling, fabrication, and inspection under one roof. Reduced coordination overhead, single point of contact, consolidated despatch.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-1">
+      <div class="why-icon">
+        <svg width="22" height="22" fill="none" stroke="rgba(255,214,0,0.8)" stroke-width="1.5" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
+        </svg>
+      </div>
+      <h3>Export-Ready</h3>
+      <p>Active export operations to Canada and Europe. Experienced with CIF/FOB terms, HS code classification, BL documentation, and international freight logistics.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <div class="why-icon">
+        <svg width="22" height="22" fill="none" stroke="rgba(255,214,0,0.8)" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+        </svg>
+      </div>
+      <h3>Engineering Support</h3>
+      <p>DFM feedback, reverse engineering from samples, material selection guidance, and tolerance feasibility review — before you commit to production tooling.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- GLOBAL / EXPORT -->
+<section id="exports" class="export-section">
+<div class="section">
+  <div class="export-grid">
+    <div class="export-text reveal">
+      <div>
+        <p class="eyebrow">Global Supply</p>
+        <h2 class="section-title" style="margin-top:12px;">Manufactured in India.<br>Delivered worldwide.</h2>
+      </div>
+      <p>
+        SBEW holds active export operations with customers in Canada and Hungary, 
+        shipping precision machined components and gearbox parts via LCL and FCL 
+        sea freight. We manage the full export documentation chain — from GR forms 
+        to Bill of Lading instructions.
+      </p>
+      <div class="export-countries">
+        <div class="export-country">
+          <span class="export-flag">🇨🇦</span>
+          <div class="export-country-info">
+            <h4>Canada — Edmonton, Alberta</h4>
+            <p>Precision gearbox components · LCL / CIF sea freight</p>
+          </div>
+        </div>
+        <div class="export-country">
+          <span class="export-flag">🇭🇺</span>
+          <div class="export-country-info">
+            <h4>Hungary — Central Europe</h4>
+            <p>Motor & gearbox components · Active development</p>
+          </div>
+        </div>
+        <div class="export-country">
+          <span class="export-flag">🇮🇳</span>
+          <div class="export-country-info">
+            <h4>India — Pan-India OEM Supply</h4>
+            <p>Automotive Tier-1, gearbox & industrial OEMs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="world-graphic reveal reveal-delay-1">
+      <!-- SVG world map schematic -->
+      <svg class="globe-svg" viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg">
+        <!-- Latitude lines -->
+        <ellipse cx="250" cy="180" rx="220" ry="160" fill="none" stroke="rgba(255,214,0,0.06)" stroke-width="0.5"/>
+        <ellipse cx="250" cy="130" rx="220" ry="50" fill="none" stroke="rgba(255,214,0,0.06)" stroke-width="0.5"/>
+        <ellipse cx="250" cy="180" rx="220" ry="100" fill="none" stroke="rgba(255,214,0,0.06)" stroke-width="0.5"/>
+        <ellipse cx="250" cy="230" rx="220" ry="50" fill="none" stroke="rgba(255,214,0,0.06)" stroke-width="0.5"/>
+        <!-- Longitude lines -->
+        <line x1="250" y1="20" x2="250" y2="340" stroke="rgba(255,214,0,0.06)" stroke-width="0.5"/>
+        <line x1="140" y1="40" x2="140" y2="320" stroke="rgba(255,214,0,0.04)" stroke-width="0.5"/>
+        <line x1="360" y1="40" x2="360" y2="320" stroke="rgba(255,214,0,0.04)" stroke-width="0.5"/>
+        <line x1="80" y1="80" x2="80" y2="280" stroke="rgba(255,214,0,0.03)" stroke-width="0.5"/>
+        <line x1="420" y1="80" x2="420" y2="280" stroke="rgba(255,214,0,0.03)" stroke-width="0.5"/>
+        <!-- Simplified continents -->
+        <!-- North America -->
+        <path d="M70,90 L120,80 L160,100 L175,140 L155,170 L130,160 L100,180 L80,160 L60,130 Z"
+          fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+        <!-- Europe -->
+        <path d="M230,80 L275,75 L295,95 L285,130 L260,140 L240,125 L225,105 Z"
+          fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+        <!-- Asia -->
+        <path d="M295,75 L400,80 L430,120 L400,160 L350,165 L300,150 L285,130 L295,95 Z"
+          fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+        <!-- Africa -->
+        <path d="M245,148 L280,148 L290,200 L270,250 L245,245 L228,200 Z"
+          fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+        <!-- South America -->
+        <path d="M135,190 L175,185 L185,230 L165,280 L140,270 L120,225 Z"
+          fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+
+        <!-- India marker -->
+        <circle cx="352" cy="142" r="5" fill="var(--gold)">
+          <animate attributeName="r" values="5;8;5" dur="2.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="1;0.5;1" dur="2.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="352" cy="142" r="2.5" fill="var(--gold)"/>
+        <text x="365" y="140" fill="rgba(255,214,0,0.9)" font-size="9" font-family="Montserrat,sans-serif" font-weight="700">SBEW</text>
+        <text x="365" y="151" fill="rgba(255,214,0,0.5)" font-size="8" font-family="Inter,sans-serif">Hoshiarpur, India</text>
+
+        <!-- Canada marker -->
+        <circle cx="105" cy="118" r="3.5" fill="rgba(255,255,255,0.6)"/>
+        <text x="116" y="122" fill="rgba(255,255,255,0.5)" font-size="8" font-family="Inter,sans-serif">Edmonton, CA</text>
+
+        <!-- Hungary marker -->
+        <circle cx="258" cy="98" r="3.5" fill="rgba(255,255,255,0.6)"/>
+        <text x="268" y="96" fill="rgba(255,255,255,0.5)" font-size="8" font-family="Inter,sans-serif">Hungary</text>
+
+        <!-- Route lines -->
+        <path d="M352,142 Q230,40 105,118" fill="none" stroke="rgba(255,214,0,0.25)" stroke-width="0.8" stroke-dasharray="4,4"/>
+        <path d="M352,142 Q305,100 258,98" fill="none" stroke="rgba(255,214,0,0.25)" stroke-width="0.8" stroke-dasharray="4,4"/>
+      </svg>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+<div class="section">
+  <div class="section-header reveal">
+    <p class="eyebrow">Product Gallery</p>
+    <h2 class="section-title">Precision parts.<br>Captured in detail.</h2>
+    <p class="section-subtitle">Every component photographed from our production floor — what you see is what we ship.</p>
+  </div>
+  <div class="gallery-grid" id="product-gallery">
+    <!-- Products load automatically from products.js -->
+  </div>
+</div>
+</section>
+
+<!-- CERTIFICATE -->
+<section id="certificate" style="background:#F0F4F8;">
+<div class="section">
+  <div class="section-header reveal">
+    <p class="eyebrow">Certification</p>
+    <h2 class="section-title">ISO 9001:2015<br>Certified.</h2>
+    <p class="section-subtitle">Assessed and certified by Magnitude Management Services Pvt. Ltd. — EGAC Accredited, IAF Member.</p>
+  </div>
+  <div class="cert-layout reveal">
+    <div class="cert-img-wrap">
+      <img src="images/iso-certificate.jpg" alt="ISO 9001:2015 Certificate — Shree Balaji Engineering Works" class="cert-img">
+      <div class="cert-corner tl"></div>
+      <div class="cert-corner tr"></div>
+      <div class="cert-corner bl"></div>
+      <div class="cert-corner br"></div>
+    </div>
+    <div class="cert-details">
+      <div class="cert-detail-row">
+        <span class="cert-detail-label">Certificate No</span>
+        <span class="cert-detail-value">25MEQTI92</span>
+      </div>
+      <div class="cert-detail-row">
+        <span class="cert-detail-label">Standard</span>
+        <span class="cert-detail-value">ISO 9001:2015</span>
+      </div>
+      <div class="cert-detail-row">
+        <span class="cert-detail-label">Scope</span>
+        <span class="cert-detail-value">Manufacturing of Engineering Goods and CNC Machined Components</span>
+      </div>
+      <div class="cert-detail-row">
+        <span class="cert-detail-label">Issued</span>
+        <span class="cert-detail-value">17 June 2025</span>
+      </div>
+      <div class="cert-detail-row">
+        <span class="cert-detail-label">Valid Until</span>
+        <span class="cert-detail-value">16 June 2028</span>
+      </div>
+      <div class="cert-detail-row">
+        <span class="cert-detail-label">1st Surveillance</span>
+        <span class="cert-detail-value">17 May 2026</span>
+      </div>
+      <div class="cert-detail-row">
+        <span class="cert-detail-label">2nd Surveillance</span>
+        <span class="cert-detail-value">17 May 2027</span>
+      </div>
+      <div class="cert-detail-row">
+        <span class="cert-detail-label">Certifying Body</span>
+        <span class="cert-detail-value">Magnitude Management Services Pvt. Ltd.</span>
+      </div>
+      <div class="cert-detail-row">
+        <span class="cert-detail-label">Accreditation</span>
+        <span class="cert-detail-value">EGAC Accredited · IAF Member (CAB #011805)</span>
+      </div>
+      <a href="#contact" class="btn-primary" style="margin-top:32px; display:inline-flex;">
+        Request a Certificate Copy
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<!-- CTA -->
+<section class="cta-strip">
+  <h2>Ready to source precision components?</h2>
+  <p>Send us your drawing or specification — we'll respond with a detailed quote within 24 hours.</p>
+  <div class="cta-actions">
+    <a href="#contact" class="btn-dark">
+      Request a Quote
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="tel:+919569160009" class="btn-outline-dark">
+      Call Us Now
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012 .95h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91A16 16 0 0015.09 17.9l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="section">
+  <div class="section-header reveal">
+    <p class="eyebrow">Get In Touch</p>
+    <h2 class="section-title">Start your<br>procurement today.</h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <p>
+        Send us your drawings, specifications, or samples. 
+        Our team will review your requirements and respond with a 
+        detailed quotation within 24 working hours.
+      </p>
+      <div class="contact-detail">
+        <div class="contact-row">
+          <div class="contact-icon">📍</div>
+          <div class="contact-row-text">
+            <strong>Factory Address</strong>
+            Village Singhriwala, Jalandhar Road,<br>
+            Hoshiarpur, Punjab — 146 001, India
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">✉</div>
+          <div class="contact-row-text">
+            <strong>Email</strong>
+            info@sbew.in · tanay.bassi@gmail.com
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">☎</div>
+          <div class="contact-row-text">
+            <strong>Phone / WhatsApp</strong>
+            +91 95691 60009
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">✓</div>
+          <div class="contact-row-text">
+            <strong>Certifications</strong>
+            ISO 9001:2015 · GSTIN Registered<br>
+            IEC Registered Exporter
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rfq-form reveal reveal-delay-1">
+      <h3>Submit a Request for Quote</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" placeholder="Acme Manufacturing Ltd.">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="john@acme.com">
+        </div>
+        <div class="form-group">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" placeholder="+1 780 000 0000">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Industry / Application</label>
+        <select>
+          <option value="" disabled selected>Select industry</option>
+          <option>Automotive / Transmission</option>
+          <option>Agriculture</option>
+          <option>Oil & Gas</option>
+          <option>Construction Equipment</option>
+          <option>Gearbox Manufacturing</option>
+          <option>Industrial Machinery</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Component Description / Requirements</label>
+        <textarea placeholder="Describe the part, material, tolerance, quantity, and any special requirements. You can also mention if you have a drawing to share."></textarea>
+      </div>
+      <button class="form-submit" type="button">
+        Send RFQ
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-mark"><span>SB</span></div>
+        <div class="nav-logo-text">
+          <strong>SBEW</strong>
+          <small>Est. 2007</small>
+        </div>
+      </a>
+      <p class="footer-tagline">
+        Precision CNC machined components and fabricated assemblies from Hoshiarpur, Punjab.
+        ISO 9001:2015 certified. OEM supply and export.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#products">Gear Blanks</a></li>
+        <li><a href="#products">Shifting Forks</a></li>
+        <li><a href="#products">Precision Shafts</a></li>
+        <li><a href="#products">Bushes & Spacers</a></li>
+        <li><a href="#products">Flanges</a></li>
+        <li><a href="#products">Coupling Hubs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Capabilities</h4>
+      <ul>
+        <li><a href="#capabilities">CNC Turning</a></li>
+        <li><a href="#capabilities">VMC Machining</a></li>
+        <li><a href="#capabilities">Fabrication</a></li>
+        <li><a href="#capabilities">Reverse Engineering</a></li>
+        <li><a href="#capabilities">Prototyping</a></li>
+        <li><a href="#quality">Quality & ISO</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About SBEW</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#infrastructure">Infrastructure</a></li>
+        <li><a href="#exports">Global Supply</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#certificate">Certificate</a></li>
+    <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Download Profile</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Shree Balaji Engineering Works. Village Singhriwala, Hoshiarpur, Punjab, India.</span>
+    <div class="footer-certs">
+      <span class="footer-cert">ISO 9001:2015</span>
+      <span class="footer-cert">GST Registered</span>
+      <span class="footer-cert">IEC Exporter</span>
+      <span class="footer-cert">Make in India</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/919569160009" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<script>
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+reveals.forEach(el => io.observe(el));
+
+// Animate stats on scroll
+function animateCounter(el, target, suffix) {
+  let start = 0;
+  const duration = 1800;
+  const step = (timestamp) => {
+    if (!start) start = timestamp;
+    const progress = Math.min((timestamp - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(eased * target) + suffix;
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+// Form submit handler
+document.querySelector('.form-submit').addEventListener('click', function() {
+  const btn = this;
+  btn.textContent = '✓ RFQ Submitted — We\'ll be in touch within 24 hours';
+  btn.style.background = 'rgba(255,214,0,0.25)';
+  btn.style.color = 'var(--gold)';
+  btn.style.cursor = 'default';
+  btn.style.border = '1px solid rgba(255,214,0,0.3)';
+});
+</script>
+
+<script src="products.js"></script>
+<script>
+// Build the gallery from products.js — do not edit this part
+(function() {
+  const grid = document.getElementById('product-gallery');
+  if (!grid || typeof PRODUCTS === 'undefined') return;
+  const delays = ['', ' reveal-delay-1', ' reveal-delay-2'];
+  PRODUCTS.forEach(function(p, i) {
+    const card = document.createElement('div');
+    card.className = 'gallery-card reveal' + delays[i % 3];
+    card.innerHTML =
+      '<div class="gallery-img-wrap">' +
+        '<img src="' + p.image + '" alt="' + p.name + ' — SBEW" loading="lazy">' +
+        '<div class="gallery-overlay"><span class="gallery-zoom">&#8599;</span></div>' +
+      '</div>' +
+      '<div class="gallery-caption">' +
+        '<h4>' + p.name + '</h4>' +
+        '<p>' + p.desc + '</p>' +
+      '</div>';
+    grid.appendChild(card);
+    // register with scroll reveal
+    if (typeof io !== 'undefined') io.observe(card);
+  });
+})();
+</script>
+</body>
+</html>
